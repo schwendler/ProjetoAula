@@ -6,6 +6,7 @@
 	<p>{{$a->autor}}</p>
 	<br>
 @endforeach
+<a href="/messages/create">create</a>
 
 <!--Mensagem -->
 @if ($errors->any())

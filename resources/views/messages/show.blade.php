@@ -8,3 +8,4 @@
 <h3><b>Atualizada em:</b> {{$messages->update_at}}</h3>
 <br>
 <a href="/messages/{{$messages->id}}/edit">editar</a>
+<a href="/messages/{{$messages->id}}/delete">delete</a>

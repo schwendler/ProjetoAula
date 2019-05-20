@@ -6,5 +6,6 @@
 <h3><b>Criada em:</b> {{$atividade->created_at}}</h3>
 <h3><b>Atualizada em:</b> {{$atividade->update_at}}</h3>
 <br>
-<a href="/atividades/{{$atividade->id}}/edit">editar</a>
+<a href="/atividades/{{$atividade->id}}/edit">editar</a> <br>
+
 

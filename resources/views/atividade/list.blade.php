@@ -6,6 +6,7 @@
 	<p>{{$a->description}}</p>
 	<br>
 @endforeach
+<a href="/atividades/create">create</a>
 
 <!--Mensagem -->
 @if ($errors->any())
@@ -15,6 +16,8 @@
         </div>
     </div>
 @endif
+
+
 
 
 <!-- \Carbon\Carbon::parse($a->scheduledto)->format('d/m/Y h:m')  -->

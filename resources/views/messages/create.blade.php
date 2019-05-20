@@ -6,7 +6,6 @@
     Título:         <input type="text" name="titulo">                 <br><br>
     Texto:      <input type="text" name="texto">           <br><br>
     Autor:      <input type="text" name="autor">           <br><br>
-    <hr>
     <input type="submit" value="Salvar">
 </form>
 

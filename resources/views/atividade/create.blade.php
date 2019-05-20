@@ -6,7 +6,6 @@
     Título:         <input type="text" name="title">                 <br><br>
     Descrição:      <input type="text" name="description">           <br><br>
     Agendado para:  <input type="datetime-local" name="scheduledto"> <br><br>
-    <hr>
     <input type="submit" value="Salvar">
 </form>
 
