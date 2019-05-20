@@ -85,8 +85,8 @@ class MensagemController extends Controller
      */
     public function edit($id)
     {
-        $obj_mensagem = mensagem::find($id);
-        return view('message.edit', ['message' => $obj_mensagem]);
+        $obj_messages = messages::find($id);
+        return view('messages.edit', ['messages' => $obj_messages]);
     }
 
     /**
@@ -96,7 +96,7 @@ class MensagemController extends Controller
      * @param  \App\messages  $messages
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, messages $messages)
+    public function update(Request $request, $id)
     {
         $messages = array (
             'titulo.required' => 'É obrigatório atribuir um título para a mensagem',
@@ -118,8 +118,8 @@ class MensagemController extends Controller
             ->withInput($request->all);
         }
         
-        $obj_messages = Atividade::find($id);
-        $obj_messages->titulo =       $request['titulo'];
+        $obj_messages = messages::find($id);
+        $obj_messages->titulo = $request['titulo'];
         $obj_messages->texto = $request['texto'];
         $obj_messages->autor = $request['autor'];
         $obj_messages->save();
